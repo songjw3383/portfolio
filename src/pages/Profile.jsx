@@ -1,10 +1,8 @@
-import React from "react";
-
 function Profile() {
   return (
-    <div className="min-h-screen">
+    <div className="h-full w-full overflow-hidden flex flex-col justify-center p-8">
       {/* Profile Header */}
-      <div className="text-start mb-12">
+      <div className="text-start mb-6">
         <span className="block text-2xl font-bold text-gray-800 mb-2">
           안녕하세요
         </span>
@@ -17,19 +15,16 @@ function Profile() {
       <div className="flex items-center justify-center space-x-16">
         {/* Left: Profile Image */}
         <div className="w-48 h-48 bg-gray-300 rounded-full overflow-hidden">
-          <img
+          {/* <img
             src="/profile.jpeg"
             alt="Profile"
             className="w-full h-full object-cover"
-          />
+          /> */}
         </div>
 
         {/* Right: Personal Information */}
-        <div className="w-2/3 space-y-6">
+        <div className="w-2/3 space-y-6 overflow-auto">
           <ul className="space-y-4 text-lg text-gray-600">
-            <li>
-              <strong>송재우</strong>
-            </li>
             <li>
               <strong>1995.04.23</strong>
             </li>
@@ -74,10 +69,37 @@ function Profile() {
         </div>
       </div>
 
-      <div className="mt-16">
-        <h2 className="text-3xl font-bold text-gray-800 mb-6">📌 경력 사항</h2>
-        <div className="max-h-160 overflow-auto space-y-6 border border-gray-300 p-4 rounded-lg">
+      <h2 className="text-3xl font-bold text-gray-800 mb-3 mt-6">
+        📌 경력 사항
+      </h2>
+      <div className="mt-8 overflow-auto h-[45vh]">
+        <div className="space-y-6 border border-gray-300 p-4 rounded-lg">
           {/* 회사 1 */}
+          <div className="p-6 border border-gray-200 shadow-md rounded-lg bg-white">
+            <h3 className="text-xl font-semibold text-gray-700">크레스프리</h3>
+            <p className="text-gray-600">2021.11. - 현재</p>
+            <div className="mt-4 space-y-3 text-gray-700">
+              <p>
+                <strong>웹 서비스 개발 및 유지보수</strong>
+                <br />- 대시보드 및 관리 시스템 개발
+                <br />- 실시간 데이터 시각화 및 모니터링 기능 제공
+                <br />- IoT 센서 및 Edge 디바이스 활용한 실시간 데이터 수집 및
+                분석 웹 서비스 개발
+              </p>
+
+              <p>
+                <strong>디자이너 및 팀 협업</strong>
+                <br />- Figma 및 Zeplin을 활용한 화면 설계 및 와이어프레임 작업
+                <br />- Microsoft Teams 및 Slack을 이용한 원활한 커뮤니케이션과
+                협업
+              </p>
+
+              <p>
+                <strong>배포 및 인프라 관리</strong>
+                <br />- Docker를 활용한 애플리케이션 배포 및 관리
+              </p>
+            </div>
+          </div>
           <div className="p-6 border border-gray-200 shadow-md rounded-lg bg-white">
             <h3 className="text-xl font-semibold text-gray-700">크레스프리</h3>
             <p className="text-gray-600">2021.11. - 현재</p>
