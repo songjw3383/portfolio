@@ -62,7 +62,7 @@ export default function App() {
     <>
       <div className="grid grid-cols-[200px_1fr] h-screen">
         {/* 네비게이션 메뉴 (고정) */}
-        <nav className="fixed top-5 left-5 w-[200px]">
+        <nav className="fixed top-5 left-5 w-[250px]">
           <ul className="flex flex-col space-y-2">
             {sortedSections.map((section, index) => {
               const originalIndex = sections.indexOf(section);
@@ -90,7 +90,7 @@ export default function App() {
         </nav>
 
         {/* 컨텐츠 영역 */}
-        <div className="ml-[250px] w-[calc(100vw-250px)]">
+        <div className="ml-[250px] w-[calc(100vw-285px)]">
           {sections.map((section, index) => (
             <motion.section
               key={index}
