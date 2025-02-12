@@ -7,7 +7,7 @@ import Projects from "./pages/Projects.jsx";
 import Contact from "./pages/Contact.jsx";
 
 // const sections = ["Profile", "Skills", "Projects", "Contact"];
-const sections = ["Skills", "Profile", "Projects", "Contact"];
+const sections = ["Profile", "Skills", "Projects", "Contact"];
 
 const sectionComponents = {
   Profile: <Profile />,

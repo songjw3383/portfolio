@@ -2,7 +2,7 @@ function Profile() {
   return (
     <div className="h-full w-full overflow-hidden flex flex-col justify-center p-8">
       {/* Profile Header */}
-      <div className="text-start mb-6">
+      <div className="text-start mb-16">
         <span className="block text-2xl font-bold text-gray-800 mb-2">
           안녕하세요
         </span>
@@ -15,11 +15,11 @@ function Profile() {
       <div className="flex items-center justify-center space-x-16">
         {/* Left: Profile Image */}
         <div className="w-48 h-48 bg-gray-300 rounded-full overflow-hidden">
-          {/* <img
+          <img
             src="/profile.jpeg"
             alt="Profile"
             className="w-full h-full object-cover"
-          /> */}
+          />
         </div>
 
         {/* Right: Personal Information */}
